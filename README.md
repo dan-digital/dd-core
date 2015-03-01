@@ -1,2 +1,2 @@
 # dd-core
-Dan Digital Core
+DanDigital Core
