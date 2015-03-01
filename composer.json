@@ -1,0 +1,23 @@
+{
+    "name": "dan-digital/dd-core",
+    "description": "",
+    "authors": [
+        {
+            "name": "Daniel Yefet",
+            "email": "daniel.yefet@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "DanDigital\\DdCore\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
