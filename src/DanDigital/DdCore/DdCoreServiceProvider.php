@@ -18,7 +18,8 @@ class DdCoreServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('dan-digital/dd-core');
+		$this->package('dan-digital/dd-core', 'DD');
+		include __DIR__."/../../routes.php";
 	}
 
 	/**
