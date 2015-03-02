@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>@yield('title', ucfirst(Request::segment(2)).' | DanDigital Admin')</title>
-	@include('includes.admin.meta-tags')
-	@include('includes.admin.style-tags')
-	@include('includes.admin.head-script-tags')
+	@include('DD::includes.meta-tags')
+	@include('DD::includes.style-tags')
+	@include('DD::includes.head-script-tags')
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 		@yield('content')
 	</main>
 
-	@include('includes.admin.script-tags')
+	@include('DD::includes.script-tags')
 
 </body>
 </html>

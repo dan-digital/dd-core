@@ -3,6 +3,7 @@
 use Auth;
 use View; 
 use Input;
+use Redirect;
 
 class SessionController extends \BaseController {
 
@@ -16,7 +17,7 @@ class SessionController extends \BaseController {
 
 		if (Auth::check())
 		{
-			return Redirect::route('DD::dashboard');
+			return Redirect::route('admin.dashboard');
 		}
 
 		return View::make('DD::session.create');
@@ -33,7 +34,7 @@ class SessionController extends \BaseController {
 
 		if (Auth::attempt($input))
 		{
-			return Redirect::route('DD::dashboard');
+			return Redirect::route('admin.dashboard');
 		}
 		
 		return Redirect::back()->with('login_error', 'Incorrect login details :(')->withInput();
