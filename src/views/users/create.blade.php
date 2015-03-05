@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('DD::layouts.admin')
 
 @section('content')
 	

@@ -1,7 +1,7 @@
 <?php namespace DanDigital\DdCore;
 
 use Auth;
-use View; 
+use View;
 use Input;
 use Redirect;
 
